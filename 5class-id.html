@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class and id</title>
+  </head>
+  <body>
+    <!-- Class is used to style or locate more than one elements.More than one tag
+         can have same class name.So by using that class name styling can be done which is applied to all the elements as their class name is same. 
+    
+    SHORTCUT:
+    1.  elementName.classname :creates a element whose class is mention 
+    2.  p.firstpara : so this creats a <p> tag with class name firstpara.
+    3.  .classname gives me a default element ie <div> with mentioned class name.
+        for ex (.mydiv) gives me "<div class="mydiv"></div>""
+        
+    .classname.classname.classname gives me a default tag <div> with there different classnames ie for exple 
+     (1) .mydiv1.mydiv2.mydiv3 creates me ::  <div class="mydiv1 mydiv2 mydiv3"></div>
+     (2) p.mypara1.mypara2.mypara2 creates me :: <p class="mypara1 mypara2 mypara3"></p>
+         so here the same <p> tag  is having three differnt class name ie mypara1 mypara2 mypara3. 
+     (3) p.mainpara*4 gives me :  (this works same wit all the elements)
+              <p class="mainpara"></p>
+              <p class="mainpara"></p>
+              <p class="mainpara"></p>
+              <p class="mainpara"></p>
+
+    
+        -->
+        <p class="mypara1 mypara2 mypara3"></p>
+        <div class="multidivs">hie div 1</div>
+        <div class="multidivs">hie div 2</div>
+        <div class="multidivs">hie div 3</div>
+
+        <p class="mainpara">paragraph 1</p>
+        <p class="mainpara">paragraph 2</p>
+        <p class="mainpara">paragraph 3</p>
+        <p class="mainpara">paragraph 4</p>
+
+    <!-- ID are used to uniquely identify the elements with their name.So unlike class where multiple elements can have same class name ,here the multiple elements cannot have same id.
+    
+    SHORTCUT
+    (1) elementName#idname :gives me element with specified id name.
+    (2) p#mypara gives me  <p id="info"></p>
+    (3) #mypara1 gives me a default tag that is <div> as <div id="info2"></diinfo2>
+    (4) p#mypara*4 gives me :  (this works same wit all the elements)
+              <p id="mypara"></p>
+              <p id="mypara"></p>
+              <p id="mypara"></p>
+              <p id="mypara"></p>
+     -->
+    <p id="info"></p>
+    <div id="info2"></div>
+  </body>
+</html>

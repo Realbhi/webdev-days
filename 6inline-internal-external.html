@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline-internal-external CSS</title>
+    <style>
+        /* <div> element styled using INTERNAL CSS 
+           INTERNAL CSS: internal css is a type where the css is mentioned using <style> tag and all the styling is done by specifying the element */
+      div {
+             color: rgb(13, 128, 228);
+            background-color: #0b0c0c;
+          }
+
+          </style>
+          /* EXTERNAL CSS: the external css is a type where styling is done by linking an external css sheet to the markup.The styling which is written in .css file is connected wit html file. */
+    
+          /* if same element is styled by internal and external css then the one whose whos style is done at the end (latest),that styling is considered.  */
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- IMPORTANT NOTES:
+
+        (1) The inline css is a type of styling the elements where the css is written within the tag
+        (2) The inline css have the highest priority among styling types ie it have more priority   than internal and external CSS.
+        (3) If same element is styled by using inline,external and internal CSS then the priority is given to INLINE CSS.
+    -->
+    <p style="color: azure; background-color: blueviolet">
+      This is tutorial for inline css
+    </p>
+
+    <!-- so here we can see that as said the same div element is styled using inline and internal css but the styling done using INLINE CSS is only applied as it has higher priority. -->
+
+    <div style="color:azure; background-color: black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est recusandae possimus, dignissimos itaque minima dolores ex, suscipit expedita unde hic iste at voluptates dicta quis nihil cumque obcaecati laborum consectetur.</div>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cumque
+      quis in cupiditate provident tempore vel rem obcaecati earum blanditiis
+      explicabo incidunt voluptatum ratione molestias sint. Itaque, et aliquam!
+      Vel.
+    </div>
+
+    <br>
+    <br>
+  </body>
+</html>

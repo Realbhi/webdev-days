@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>This is my html form :</h2>
+
+    <!-- The value of action ie "backend.php" suggest that the destination where the form is submitted .Like the form created will be submitted at the backend called "backend.php" -->
+    <form action="backend.php">
+   
+        <!-- 1.label is used to select the particular tag by providing id of the tag as the for value in <label> tag. for ex  the input tag of type text  has the id value as "nameis" which is provided as value of "for" in <label> tag 
+            
+        2.the input tag is used to input text,textarea,radio,checkbox,date etc in the form. The name value suggest the name by which the backend identifies that particular tag.-->
+
+        <div>
+              <label for="nameis">Name :</label>
+              <input type="text" name="txt"  id="nameis">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="tareek">date :</label>
+             <input type="date" name="dte" id="tareek">
+        </div>
+        <br>
+
+
+        <div>
+            email : <input type="email" name="mail" >
+        </div>
+        <br>
+
+       <!-- used to input numbers only. -->
+        <div>
+            ph no : <input type="number" name="nmb">
+        </div>
+        <br>
+         
+         <!-- checkbox value  is used to create check-box .if checked already written within the tag then it will be automatically checked in the form. -->
+        <div>
+            check terms and conditions <input type="checkbox" name="chk" checked>
+        </div>
+        <br>
+
+         <!-- remember same value of name should be given. -->
+        <div>
+            Gender :  Male <input type="radio" name="mygender" > Female <input type="radio" name="mygender" >
+        </div>
+        <br>
+
+
+        <div>
+            <input type="submit" value="submit here">
+            <input type="reset" value="Reset All">
+        </div>
+        <br>
+
+
+        <div>
+            <textarea name="txtar" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+
+        <!-- selct is used to create a option list .Inside selsct we have options.
+        so in below example the value swift ,maruti is displayed not swi,maru. -->
+        
+        <label for="car">choose car :</label>
+        <select name="opt" id="car">
+            <option value="swi">Swift</option>
+            <option value="maru" selected>Maruti</option>
+        </select>
+        h2.mian
+    </form>
+</body>
+</html>
