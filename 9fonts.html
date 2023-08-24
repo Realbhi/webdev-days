@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts</title>
+    <!-- Type of fonts :
+         (1) WEB SAFE FONTS : fonts which are already pre installed by the os and   available in the pc.
+
+         (2) WEB FONTS : fonts which are not installed and need to be imported from google fonts.
+
+         (3) FONT STACK: list of fonts listed according to there priority.
+         font-family: 'Courier New', Courier, monospace; here courier is applied at first if not then next priority courier is applied if not then next monospace is applied.
+          -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+
+    <style>
+        p{
+            font-family: 'Kablammo', cursive;
+        }
+        .mypara{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 23px;   /* px is (1/6) of an inch */
+            line-height: 2em;
+            font-weight: bold;
+        }
+    </style>
+
+   
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque corrupti velit explicabo adipisci sapiente officiis hic voluptate rem, alias laborum? Laborum, vel! Alias, quo exercitationem, ut nihil voluptatem illo corporis vel veniam quos esse, rem quis accusamus velit eligendi?</p>
+    <br>
+    <p class="mypara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, repellat laudantium molestiae deserunt, ex nulla quod nobis aliquid ipsam expedita ad et beatae quos doloribus reprehenderit repellendus. Nobis numquam esse, hic necessitatibus cum iste.</p>
+</body>
+</html>
