@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background</title>
+    <style>
+        h2{
+            background-color: azure;
+            border: 5px solid red;
+        }
+        .mypara{
+            color: blanchedalmond;
+            background-color: black;
+            height: 100px;
+            width: 455px;
+            /* border: 4px dotted hotpink; == width,style,color*/
+            border-color: hotpink;
+            border-width: 4px;
+            border-style: dotted;
+            border-radius: 15px;
+            
+        }
+        .mypara1{
+            color: blanchedalmond;
+            background-color: black;
+            height: 100px;
+            width: 455px;
+            /* border: 4px dotted hotpink; == width,style,color*/
+            
+            border-top: 4px solid red;
+            border-bottom: 4px dotted red;
+            border-right: 4px solid hotpink;
+            border-left: 4px dotted hotpink;
+
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;  
+        }
+
+        .mypara2{
+            color: black;
+            background-color: azure;
+            height: 500px;
+            background-image: url(https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+
+            /* when the image is inserted in the paragraph it is  repeating .image repeating can be only be made to repeat in x by "repeat-x" and in only y by " repeat-x" and not to repeat by "no-repeat" */
+            background-repeat: no-repeat;
+
+            /* in background position if we want to mention only the name of the position like left and right ,top ,bottom and center then there are some rules
+            1.only one or two positions can be mentioned at a time.
+            2.at first only top or bottom can be mention. (as shown below )
+            3.at second only left,right,centre can be mentioned (as shown below)*/
+            
+            /* background-position: top center; */
+            /* background-position: top right; */
+            /* background-position: top left; */
+            /* background-position: bottom right; */
+            /* background-position: bottom left; */
+            background-position: center;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Tutorial for Border and background.</h2>
+    <p class="mypara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, modi.</p>
+
+    <p class="mypara1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolorem blanditiis, quae voluptas beatae natus ducimus dolor magni fugiat sit officiis minus molestias incidunt minima voluptate molestiae. Nam et amet illum laboriosam, at, in, soluta tempora sint hic eos adipisci?</p>
+
+    <p class="mypara2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita iure sapiente magnam reprehenderit ullam consectetur error iusto culpa. Itaque quo est fugit aut quos dolores, obcaecati optio omnis ratione impedit!</p>
+</body>
+</html>
