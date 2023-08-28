@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        #navbar{
+            background-color: rgb(0, 0, 0);
+            border-radius: 7px;
+        }
+
+       /* so when overflow :auto is applied to ul then as it was not in its parent that is in the navbar.so when overflow property was applied then it has to fit within its parent that is navbar.So it gets with the navbar . */
+        #navbar ul {
+            overflow: auto;  
+        }
+
+        #navbar li{
+            float: left;
+            list-style: none;
+            margin: 22px 17px;
+        }
+
+        #navbar li a{
+            color: azure;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 3px 3px; 
+            margin: 5px 5px;
+        }
+
+        a:hover{
+            background-color: rgb(172, 38, 205);
+        }
+        .search{
+            float: right;
+            background-color: rgb(3, 3, 3);
+            color: rgb(222, 194, 194);
+            padding: 18px 27px 18px 0px;
+        }
+
+        #navbar input{
+            border-radius: 5px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <ul class="myul">
+                <li>
+                    <a href="3list-table.html" target="_blank">Home</a>
+                </li>
+                 <li>
+                    <a href="4forms-imput.html"  target="_blank">About</a>
+                </li>
+                <li>
+                    <a href="5class-id.html" target="_blank">Service</a>
+                </li>
+                <li>
+                    <a href="6inline-internal-external.html" target="_blank">Logout</a>
+                </li>
+                <div class="search">
+                    <input type="text" name="txtname" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
