@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* POSITION : RELATIVE means it positions itself to new position relative to its old one or the normal flow one. */
+
+        /* POSITION :ABSOLUTE means it will position itself to new position relative to its parent or with respect to its parent. */
+
+        /* POSITION :FIXED means it will position itself to new position relative to the browser . */
+
+        
+        #container{
+            background-color: rgb(182, 241, 241);
+            border: 2px solid hotpink;
+            height: 1200px;
+        }
+        .box{
+            background-color: rgb(174, 219, 77);
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        /* #box2{
+            position: absolute;
+            top: 44px;
+            left: 150px;
+            
+        } */
+        /* #box3{
+            position: relative;
+            top: 22px;
+            left: 52px;
+        } */
+
+         /* #box3{
+             position:fixed;
+             right: 6px;
+
+         } */
+         #box3{
+             position:sticky;
+             top: 2px;
+
+         }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">hie ABHI</div>
+        <div class="box" id="box2">hie aman</div>
+        <div class="box" id="box3">hie md</div>
+        <div class="box" id="box4">hie gadwal</div>
+    </div>
+</body>
+</html>
