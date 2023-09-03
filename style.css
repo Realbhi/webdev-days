@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* color: white; */
+    margin: 0px;
+    padding: 0px;
+    background: url(images/fit.jpg);
+  }
+  .left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 18px;
+    color: coral;
+  }
+
+  .image {
+    width: 53px;
+    /* This function is used to  invert the image color from white to 
+          black or from black to white
+        filter: invert(100%); */
+    display: block;
+    margin: auto;
+  }
+
+  .mid {
+    /* border: 2px solid rgb(157, 83, 10); */
+    /* display: block; */
+    width: 39%;
+    margin: 9px auto;
+    box-sizing: border-box;
+  }
+  .right {
+    /* border: 2px solid rgb(14, 186, 88); */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 18px;
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .list {
+    list-style: none;
+    /* float: left; */
+    display: inline-block;
+    font-size: 25px;
+    color: cadetblue;
+  }
+  a {
+    color: #dda3a3;
+    text-decoration: none;
+    padding: 0px 23px;
+  }
+  a:hover {
+    color: rgb(223, 227, 113);
+    /* text-decoration: underline; */
+  }
+
+  .mybtn {
+    background-color: rgb(139, 226, 221);
+    /* color: black; */
+    margin: 0px 9px;
+    padding: 4px 14px;
+    border-radius: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .mybtn:hover {
+    background-color: aqua;
+  }
+
+  .container{
+    color: white;
+    border: 2px solid rgb(213, 157, 183);
+    width: 38%;
+    margin: 151px 102px;
+    padding: 33px 36px;
+    border-radius: 20px;
+  }
+
+  .mydiv input{
+    background-color: rgb(163, 203, 227);
+    color: black;
+    text-align: center;
+    display: block;
+    width: 253px;
+    margin: 9px auto;
+    padding: 6px;
+    border-radius: 11px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .container h3{
+     text-align: center;
+  }
+
+  .container button{
+    display: block;
+    width: 23%;
+    margin: 14px auto;
+  }
